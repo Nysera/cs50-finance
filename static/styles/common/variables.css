@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #3659ab;
+    --primary-color-lighter: #4067c3;
+    --primary-heading-color: #2e3034;
+    --primary-typography-color: #57637e;
+    --background-color: #fff;
+    --white: #fff;
+    --header-background-color: #2c3644;
+    --header-hover-color: rgb(255 255 255 / 70%);
+    --form-background-color: #f7f7f9;
+    --form-border-color: #e4e4ea;
+    --error-red: #ff4242;
+    --error-red-lighter: #f9dbdb;
+    --error-red-light: #efa1a1;
+    --success-green-light: #baffc6;
+    --success-green-darker: #76ff8e;
+    --layout-gutter-small: 20px;
+    --layout-gutter-medium: 40px;
+    --layout-max-width: 1240px;
+}

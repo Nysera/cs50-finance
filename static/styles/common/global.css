@@ -1,0 +1,53 @@
+/* Box-sizing */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    color: var(--primary-typography-color);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--background-color);
+    padding: 0;
+    margin: 0;
+}
+
+/* Anchor element */
+a {
+    color: var(--primary-color);
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    padding: 80px var(--layout-gutter-small);
+}
+
+@media(min-width: 500px) {
+    main {
+        padding: 80px var(--layout-gutter-medium);
+    }
+}
+
+/* Container */
+.container {
+    width: 100%;
+
+    max-width: var(--layout-max-width);
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* Section intro */
+.section_intro{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 45px;
+}

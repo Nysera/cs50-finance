@@ -1,0 +1,26 @@
+.button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: red;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Primary button styles */
+.button-primary {
+    color: var(--white);
+    background-color: var(--primary-color-lighter);
+}
+
+.button-primary:hover {
+    background-color: var(--primary-color);
+}

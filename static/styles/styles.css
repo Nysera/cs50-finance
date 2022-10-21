@@ -1,0 +1,18 @@
+/* Import common styles */
+@import "common/normalize.css";
+@import "common/variables.css";
+@import "common/global.css";
+@import "common/typography.css";
+
+/* Import layout styles */
+@import "layout/header.css";
+@import "layout/footer.css";
+
+/* Import component styles*/
+@import "components/forms.css";
+@import "components/table.css";
+@import "components/buttons.css";
+@import "components/flash.css";
+
+/* Import page styles */
+@import "pages/quote.css";

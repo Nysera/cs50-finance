@@ -1,0 +1,10 @@
+.site-footer {
+    text-align: center;
+    padding: 20px var(--layout-gutter-small);
+}
+
+@media(min-width: 500px) {
+    .site-footer {
+        padding: 20px var(--layout-gutter-medium);
+    }
+}

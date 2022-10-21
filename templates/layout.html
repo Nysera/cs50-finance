@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/static/images/favicon.ico" rel="icon">
+        <title>C$50 Finance: {% block title %}{% endblock %}</title>
+        <link href="/static/styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="site-header_container">
+                <div class="site-header_logo">
+                    <a href="/">CS50 Finance</a>
+                </div>
+                <button id="menuToggle" class="site-header_menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="site-header_nav">
+                    <ul>
+                        {% if session["user_id"] %}
+                            <li>
+                                <a href="/quote">Quote</a>
+                            </li>
+                            <li>
+                                <a href="/buy">Buy</a>
+                            </li>
+                            <li>
+                                <a href="/sell">Sell</a>
+                            </li>
+                            <li>
+                                <a href="/history">History</a>
+                            </li>
+                            <li>
+                                <a href="/logout">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M11 13l4.5-4.5-4.5-4.5v3h-7v3h7v3z"></path><path d="M1 1h11v2h-10v11h10v2h-11c-0.552 0-1-0.448-1-1v-13c0-0.552 0.448-1 1-1z"></path></svg>
+                                    Sign out
+                                </a>
+                            </li>
+                        {% else %}
+                            <li>
+                                <a href="/register">Register</a>
+                            </li>
+                            <li>
+                                <a href="/login">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M7 13l4.5-4.5-4.5-4.5v3h-7v3h7v3z"></path><path d="M15 16h-11v-2h10v-11h-10v-2h11c0.552 0 1 0.448 1 1v13c0 0.552-0.448 1-1 1z"></path></svg>
+                                    Log In
+                                </a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+        </header>
+            {% block main %}{% endblock %}
+        <footer class="site-footer">
+            Data provided by
+            <a href="https://iexcloud.io/">IEX</a>
+        </footer>
+        <script src="../static/scripts/scripts.js"></script>
+    </body>
+</html>

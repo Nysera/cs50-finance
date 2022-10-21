@@ -1,0 +1,63 @@
+.flash-container.centered .flash_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 16px;
+    margin-bottom: 18px;
+}
+
+.flash-container .flash_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 16px;
+    margin-bottom: 18px;
+}
+
+.flash-container .flash_wrapper button {
+    border: none;
+    background-color: transparent;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.flash-container .flash_wrapper button svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flash-container .flash_wrapper button:hover svg {
+    opacity: 0.8;
+}
+
+.flash-container .flash_wrapper.error {
+    border: 1px solid var(--error-red-light);
+    background-color: var(--error-red-lighter);
+}
+
+.flash-container .flash_wrapper.error button svg {
+    fill: var(--error-red);
+}
+
+.flash-container .flash_wrapper.success {
+    border: 1px solid var(--success-green-darker);
+    background-color: var(--success-green-light);
+}
+
+.flash-container .flash_wrapper.success button svg {
+    fill: var(--primary-typography-color);
+}
+
+.flash-container.centered .flash_wrapper {
+    justify-content: center;
+}
+
+.flash-container.centered .flash_wrapper .flash_close {
+    margin-left: 20px;
+}
